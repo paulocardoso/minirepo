@@ -6,6 +6,7 @@ import (
 	"html/template"
 	"log"
 	"net/http"
+	"github.com/paulocardoso/repo-lite/routers"
 )
 
 var html = template.Must(template.New("http").Parse(`
