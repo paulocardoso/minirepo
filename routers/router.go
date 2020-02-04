@@ -13,5 +13,7 @@ func InitRouter() *gin.Engine {
 
 	apiv1 := r.Group("/api/v1")
 	apiv1.GET("/users", v1.GetUser)
+	apiv1.GET("/repo", v1.GetRe)
+
 	return r
 }
