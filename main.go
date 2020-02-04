@@ -23,8 +23,6 @@ func setupRouter() *gin.Engine {
 	r := gin.Default()
 	r.SetHTMLTemplate(html)
 
-	r.GET("/user", listUser)
-
 	r.GET("/welcome", func(c *gin.Context) {
 		c.HTML(http.StatusOK, "http", gin.H{
 			"status": "success",
