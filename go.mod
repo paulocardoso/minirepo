@@ -4,6 +4,8 @@ go 1.13
 
 require (
 	github.com/DataDog/zstd v1.4.4 // indirect
+	github.com/foolin/goview v0.2.0
+	github.com/gin-contrib/location v0.0.1
 	github.com/gin-gonic/gin v1.5.0
 	github.com/go-stack/stack v1.8.0 // indirect
 	github.com/golang/snappy v0.0.1 // indirect
@@ -15,3 +17,5 @@ require (
 	golang.org/x/sync v0.0.0-20190911185100-cd5d95a43a6e // indirect
 	rsc.io/quote v1.5.2 // indirect
 )
+
+replace github.com/paulocardoso/repo-lite => /Users/pauloc/Documents/personal/projects/go/repo-lite

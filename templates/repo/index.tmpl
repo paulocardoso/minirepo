@@ -1,0 +1,19 @@
+{{ define "repo/index.tmpl" }}
+<html>
+    <body>
+    <h1>Index of {{ .path}}</h1>
+    <pre>Name     Size</pre><hr>
+    <pre>
+ <a href="../">../</a>
+{{ with .dirs }}
+    {{ range . }}
+ <a href="{{if .IsDir}} {{.Name}}/ {{else}} {{.Name}} {{end}}">{{ .Name }}</a>          {{.Size}}
+    {{ end }}
+{{ end }}
+    </pre>
+
+    <hr>
+    <address style="font-size:small;">Minirepo/0.0.1 Server at {{ .host }}</address>
+    </body>
+</html>
+{{ end }}

@@ -9,11 +9,10 @@ func InitRouter() *gin.Engine {
 	r := gin.New()
 	r.Use(gin.Logger())
 	r.Use(gin.Recovery())
+	r.LoadHTMLGlob("templates/**/*")
 
-
-	apiv1 := r.Group("/api/v1")
-	apiv1.GET("/users", v1.GetUser)
-	apiv1.GET("/repo", v1.GetRe)
+	r.GET("/repo/*regex",v1.GetRepository)
+	r.PUT("/repo/*regex",v1.UploadRepository)
 
 	return r
 }
