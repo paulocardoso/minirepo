@@ -3,26 +3,29 @@ package main
 import (
 	"fmt"
 	"github.com/gin-gonic/gin"
-	"github.com/paulocardoso/repo-lite/routers"
+	"github.com/paulocardoso/minirepo/config"
+	"github.com/paulocardoso/minirepo/routers"
+	"log"
 	"net/http"
 )
-
-
 
 func main() {
 	gin.SetMode(gin.DebugMode)
 
+	var cfg = config.GetConfig()
 	routersInit := routers.InitRouter()
-	endPoint := fmt.Sprintf(":%d", 8080)
-	maxHeaderBytes := 1 << 20
 
 	server := &http.Server{
-		Addr:           endPoint,
-		Handler:        routersInit,
-		MaxHeaderBytes: maxHeaderBytes,
+		Addr:    fmt.Sprintf(":%v", cfg.Port),
+		Handler: routersInit,
 	}
 
-	fmt.Printf("[info] start http server listening %s", endPoint)
+	var err = server.ListenAndServe()
 
-	server.ListenAndServe()
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	fmt.Printf("[info] start http server listening %s", cfg.Port)
+
 }

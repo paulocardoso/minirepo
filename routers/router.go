@@ -2,7 +2,7 @@ package routers
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/paulocardoso/repo-lite/routers/api/v1"
+	"github.com/paulocardoso/minirepo/routers/api/v1"
 )
 
 func InitRouter() *gin.Engine {
@@ -11,8 +11,8 @@ func InitRouter() *gin.Engine {
 	r.Use(gin.Recovery())
 	r.LoadHTMLGlob("templates/**/*")
 
-	r.GET("/repo/*regex",v1.GetRepository)
-	r.PUT("/repo/*regex",v1.UploadRepository)
+	r.GET("/repo/*regex", v1.GetRepository)
+	r.PUT("/repo/*regex", v1.UploadRepository)
 
 	return r
 }
