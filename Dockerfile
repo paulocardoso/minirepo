@@ -9,9 +9,12 @@ WORKDIR     /go/src/minirepo-container
 ADD         . /go/src/minirepo-container
 
 
+RUN mkdir $LIB_PATH
 RUN go get -d -v ./...
 RUN go install -v ./...
 RUN go build
+
+
 
 EXPOSE 8080
 

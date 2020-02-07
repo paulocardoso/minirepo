@@ -55,7 +55,7 @@ func listDir(fPath string, c *gin.Context, param string) {
 		log.Fatal(err)
 	}
 	c.HTML(http.StatusOK, "repo/index.tmpl", gin.H{
-		"title": "Posts",
+		"title": "Mini Repo | List Libraries",
 		"repo":  "Mini Repo",
 		"host":  c.Request.Host,
 		"path":  c.Request.RequestURI,
