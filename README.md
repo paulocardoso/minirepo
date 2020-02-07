@@ -7,11 +7,11 @@ Mini Repo is a simple Maven Artifact Manager Server, with Mini Repo, you can eas
 [Docker File](https://github.com/paulocardoso/minirepo/blob/master/Dockerfile)
 
 
-#What is Mini Repo?
+# What is Mini Repo?
 
 Mini Repo is a simple Maven Artifact Manager Server, with Mini Repo, you can easily deploy and download your own Java binaries.
 
-#QuickStart with Mini Repo Server and Docker
+# QuickStart with Mini Repo Server and Docker
 
 Here is how to get a single node Couchbase Server cluster running on Docker containers:
 
