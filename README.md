@@ -1,19 +1,28 @@
 # Minirepo - Micro Artifact Manager 
 
+Mini Repo is a simple Maven Artifact Manager Server, with Mini Repo, you can easily deploy and download your own Java binaries.
 
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-## Table of Contents
+# Supported tags and respective Dockerfile links
 
-* [Introduction](#introduction)
-  * [Support Us](#support-us)
-* [latest version URL support](#latest-version-url-support)
-* [Contributing](#contributing)
-* [API usage](#api-usage)
-* [Extensions, Plugins, Resources](#extensions-plugins-resources)
-* [Contributors](#contributors)
-* [License](#license)
+[Docker File][docker]
 
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+#What is Mini Repo?
 
-## Introduction
+Mini Repo is a simple Maven Artifact Manager Server, with Mini Repo, you can easily deploy and download your own Java binaries.
+
+#QuickStart with Mini Repo Server and Docker
+
+Here is how to get a single node Couchbase Server cluster running on Docker containers:
+
+Step - 1 : Run Minirepo Server docker container
+
+docker run -d --name minirepo -p 8080:8080 paulinhocru/minirepo:latest
+
+Step - 2 : Next, visit http://localhost:8080/repo on the host machine to see the Web Console.
+
+## Environenment Variables
+SERVER_PORT : Port of the Minirepo server will run
+LIB_PATH : Folder where the artefacts will be stored inside of the container e.g"/tmp/minirepo"
+
+
+[docker] : https://github.com/paulocardoso/minirepo/blob/master/Dockerfile
