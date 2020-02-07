@@ -4,7 +4,8 @@ Mini Repo is a simple Maven Artifact Manager Server, with Mini Repo, you can eas
 
 # Supported tags and respective Dockerfile links
 
-[Docker File][docker]
+[Docker File](https://github.com/paulocardoso/minirepo/blob/master/Dockerfile)
+
 
 #What is Mini Repo?
 
@@ -22,7 +23,5 @@ Step - 2 : Next, visit http://localhost:8080/repo on the host machine to see the
 
 ## Environenment Variables
 SERVER_PORT : Port of the Minirepo server will run
-LIB_PATH : Folder where the artefacts will be stored inside of the container e.g"/tmp/minirepo"
+LIB_PATH : Folder where the artefacts will be stored inside of the container e.g `/tmp/minirepo`
 
-
-[docker] : https://github.com/paulocardoso/minirepo/blob/master/Dockerfile
