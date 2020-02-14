@@ -1,6 +1,10 @@
 # Minirepo - Micro Artifact Manager 
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/ee73b3533b26d022b134/maintainability)](https://codeclimate.com/github/paulocardoso/minirepo/maintainability)
+
+
 Mini Repo is a simple Maven Artifact Manager Server, with Mini Repo, you can easily deploy and download your own Java binaries.
+
 
 # Supported tags and respective Dockerfile links
 
