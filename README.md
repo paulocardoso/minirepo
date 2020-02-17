@@ -17,7 +17,7 @@ Mini Repo is a simple Maven Artifact Manager Server, with Mini Repo, you can eas
 
 # QuickStart with Mini Repo Server and Docker
 
-Here is how to get a single node Couchbase Server cluster running on Docker containers:
+Here is how to get a single node Minirepo Server cluster running on Docker containers:
 
 Step - 1 : Run Minirepo Server docker container
 
