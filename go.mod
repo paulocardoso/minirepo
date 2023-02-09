@@ -6,7 +6,7 @@ require (
 	github.com/DataDog/zstd v1.4.4 // indirect
 	github.com/foolin/goview v0.2.0
 	github.com/gin-contrib/location v0.0.1
-	github.com/gin-gonic/gin v1.7.0
+	github.com/gin-gonic/gin v1.7.7
 	github.com/go-stack/stack v1.8.0 // indirect
 	github.com/golang/snappy v0.0.1 // indirect
 	github.com/kelseyhightower/envconfig v1.4.0
